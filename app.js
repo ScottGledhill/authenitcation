@@ -5,6 +5,8 @@ const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
 
+mongoose.connect();
+
 const app = express();
 
 const users = require('./routes/users');
@@ -12,6 +14,8 @@ const users = require('./routes/users');
 const port = 3000;
 
 app.use(cors());
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.json());
 
@@ -24,5 +28,3 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server started on port ${port}`)
 });
-
-app.export(app.js)

@@ -16,4 +16,5 @@ router.get('/profile', (req, res, next) => {
 router.get('/validate', (req, res, next) => {
   res.send('validate test');
 });
+
 module.exports = router;
