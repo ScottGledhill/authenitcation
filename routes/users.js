@@ -18,7 +18,7 @@ router.post('/register', (req, res, next) => {
     } else {
       res.json({success: true, msg:'user registered'});
     }
-  }
+  });
 });
 
 router.post('/authenticate', (req, res, next) => {
