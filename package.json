@@ -16,7 +16,7 @@
     "body-parser":"*",
     "passport":"*",
     "passport-jwt":"*"
-  }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ScottGledhill/authentication.git"
