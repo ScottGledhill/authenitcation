@@ -13,12 +13,12 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a [routerLink]="['/']">home</a></li>
+      <ul class="nav navbar-nav navbar-left">
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/']">home</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a [routerLink]="['/login']">login</a></li>
-        <li><a [routerLink]="['/register']">register</a></li>
+        <li [routerLinkActive]="['active']"><a [routerLink]="['/login']">login</a></li>
+        <li [routerLinkActive]="['active']"><a [routerLink]="['/register']">register</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
