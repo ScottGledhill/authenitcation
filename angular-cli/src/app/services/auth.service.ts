@@ -8,7 +8,7 @@ export class AuthService {
   authToken: any;
   user: any;
 
-  constructor(private htpp:Http) { }
+  constructor(private http:Http) { }
 
   registerUser(user){
     let headers = new Headers();
